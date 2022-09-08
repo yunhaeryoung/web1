@@ -7,17 +7,37 @@
 
 <body>  
     <h1><a href="index.html">web</a></h1>
-    <div id="grid">
+    <input id="night_day" type="button" value="night" onclick="
+    if(document.querySelector('#night_day').value === 'night') {
+        document.querySelector('body').style.backgroundColor = 'black'; 
+        document.querySelector('body').style.color = 'white';
+        document.querySelector('#night_day').value = 'day'}
+        else {
+        document.querySelector('body').style.backgroundColor = 'white'; 
+        document.querySelector('body').style.color = 'black';
+        document.querySelector('#night_day').value = 'night';} "/>
+  
     <ol>
         <li><a href="1.html">html</a></li>
         <li><a href="2.html">css</a></li>
         <li><a href="3.html">javascript</a></li>
     </ol>
-    <div id="article">
+   
     <h2>web이란 무엇인가?</h2>
     <p>여기는 <a href="http://backslash.co.kr/" target="_blank" title="html5 spe">첫</a> 문장이다. 호롤ㄹ로로로로로로로로롤로ㅗ롤</p>
     여기는 두번째 문장이다 호홓호호호호
-</div>
-</div>
+
+
+    <input  type="button" value="night" onclick="
+      var target = document.querySelector('body');
+    if(this.value === 'night') {
+        target.style.backgroundColor = 'black'; 
+        target.style.color = 'white';
+        this.value = 'day'}
+        else {
+            target.style.backgroundColor = 'white'; 
+            target.style.color = 'black';
+        this.value = 'night';} "/>
+
 </body>
 </html>
